@@ -1,10 +1,16 @@
+import {MotiView} from 'moti';
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 
 export const HomeScreen = () => {
   return (
     <View style={styles.container}>
-      <Text>Home</Text>
+      <MotiView
+        from={{opacity: 0}}
+        animate={{opacity: 1}}
+        transition={{delay: 1000}}>
+        <Text>Home 🎃</Text>
+      </MotiView>
     </View>
   );
 };
