@@ -1,0 +1,7 @@
+- [ ] shared element transition
+- [ ] animated charts
+- [ ] cool flatList animation
+- [ ] flashList trial
+- [ ] alphabet list with fast-scroll
+- [ ] parallax header á la spotify
+- [ ] animated blur background w/ skia
