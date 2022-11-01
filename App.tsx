@@ -1,21 +1,19 @@
+import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
-import {SafeAreaView, StyleSheet, Text} from 'react-native';
+import {RootStack} from './src/navigation';
+// this is needed by moti
+import 'react-native-reanimated';
+import {GestureHandlerRootView} from 'react-native-gesture-handler';
 
 const App = () => {
   return (
-    <SafeAreaView style={styles.container}>
-      <Text>🎃</Text>
-    </SafeAreaView>
+    // eslint-disable-next-line react-native/no-inline-styles
+    <GestureHandlerRootView style={{flex: 1}}>
+      <NavigationContainer>
+        <RootStack />
+      </NavigationContainer>
+    </GestureHandlerRootView>
   );
 };
 
 export default App;
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#234',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-});
