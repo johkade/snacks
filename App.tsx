@@ -1,21 +1,13 @@
+import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
-import {SafeAreaView, StyleSheet, Text} from 'react-native';
+import {RootStack} from './src/navigation';
 
 const App = () => {
   return (
-    <SafeAreaView style={styles.container}>
-      <Text>🎃</Text>
-    </SafeAreaView>
+    <NavigationContainer>
+      <RootStack />
+    </NavigationContainer>
   );
 };
 
 export default App;
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#234',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-});
