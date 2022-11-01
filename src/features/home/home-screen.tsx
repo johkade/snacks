@@ -2,6 +2,9 @@ import {MotiView} from 'moti';
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import Svg, {Circle} from 'react-native-svg';
+import {Canvas, Circle as SkiaCircle, Group} from '@shopify/react-native-skia';
+const size = 256;
+const r = size * 0.33;
 
 import Swipeable from 'react-native-gesture-handler/Swipeable';
 
@@ -25,6 +28,13 @@ export const HomeScreen = () => {
             fill="green"
           />
         </Svg>
+        <Canvas style={{height: 100, width: 100}}>
+          <Group blendMode="multiply">
+            <SkiaCircle cx={r} cy={r} r={r} color="cyan" />
+            <SkiaCircle cx={size - r} cy={r} r={r} color="magenta" />
+            <SkiaCircle cx={size / 2} cy={size - r} r={r} color="yellow" />
+          </Group>
+        </Canvas>
       </MotiView>
     </View>
   );
