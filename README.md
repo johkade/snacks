@@ -10,6 +10,7 @@
 - [ ] drag-and-drop flatList
 - [ ] flatList with deletable messages
 - [ ] chat-screen with reply-action and react-native-keyboard-controller
+- [ ] gyroscope-card
 
 ### other
 
@@ -17,3 +18,7 @@
 - react-native-testing-library
 - detox e2e
 - performance debugging
+- geolocation
+- in app browser
+- gyroscope
+- universal shadows
